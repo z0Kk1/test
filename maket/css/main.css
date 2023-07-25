@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'PT Sans', sans-serif;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  background-color: #dcdcdc;
+}
+.hi{}
+.container{
+  max-width: 1000px;
+  max-height: 230px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+.hi__row{
+  display: flex;
+  justify-content: space-between;
+}
+.hi__image{
+  display: flex;
+  justify-content: space-between;
+}
+.hi__logo{
+  padding: 65px 0px 65px 0px;
+}
+.hi__title{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 75px 0px 0px 15px;
+  color: #767676;
+}
+.hi__sectitle{
+  font-size: 16px;
+  padding: 10px 0px 0px 15px;
+  white-space: nowrap;
+  color: #767676;
+}
+.hi__body{
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0px;
+}
+.number1{
+  font-size: 40px;
+  color: #767676;
+  float: right;
+  font-family: 'Open Sans Condensed', sans-serif;}
+.number2{
+  font-size: 40px;
+  color: #767676;
+  float: right;
+  font-family: 'Open Sans Condensed', sans-serif;}
+.fb__btn{}
+.feedback-btn{
+  white-space: nowrap;
+  font-size: 24px;
+  color: #767676;
+  font-weight: bold;
+  text-decoration: underline; /* Підкреслити текст */
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  float:right;
+}
+
+@media(max-width: 1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px){
+  .container{
+    max-width: 750px;
+  }
+}
+@media(max-width: 767px){
+  .container{
+    max-width: none;
+  }
+}
